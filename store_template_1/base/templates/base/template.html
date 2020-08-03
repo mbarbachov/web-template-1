@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+
+        <meta charset="UTF-8">
+        <title>ZEV Store Template</title>
+
+        <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/template.css' %}">
+        <link rel="icon" href="{% static 'images/favicon2.png' %}">
+        <!-- Stylesheet Connections -->
+        {% block stylesheet %}
+        {% endblock %}
+
+    </head>
+    <body>
+        <!-- Main Page Content -->
+        {% block content %}
+        {% endblock %}
+    </body>
+
+    <!-- script tag connections -->
+    {% block scripts %}
+    {% endblock %}
+</html>

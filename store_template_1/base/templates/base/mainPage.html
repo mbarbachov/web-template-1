@@ -1,0 +1,40 @@
+{% extends 'base/template.html' %}
+
+{% load static %}
+
+{% block stylesheet %}
+<link rel="stylesheet" type="text/css" href="{% static 'stylesheets/mainPage.css' %}">
+{% endblock stylesheet %}
+
+{% block content %}
+<div class="top-bar">
+    <div class="logo-container">
+        <img id="logo" src="{% static 'images/logo_transparent.png' %}" alt="Logo">
+    </div>
+    <header class="menu">
+        <ul class="menu-list">
+            <li><a target="_blank" href="#">How we function</a></li>
+            <li><a target="_blank" href="#">Services</a></li>
+            <li><a target="_blank" href="#">Pricing</a></li>
+            <li><a target="_blank" href="#">Contacts</a></li>
+        </ul>
+    </header>
+</div>
+
+<div class="main-content">
+    <div class="intro-container">
+        <h1>Welcome to Z-DEV Page</h1>
+
+        <p> Developer & Final year Student at Aberystwyth University, <br>
+            Aiming to become a full stack developer. Current skills <br>
+            under my belt are: Java, Python, HTML, CSS, JavaScript <br>
+            and many more to come.</p>
+
+
+        <button id="projects" onclick="window.open('https://github.com/Zero069')">Check Out My Projects</button>
+    </div>
+    <div class="image2-container">
+        <img src="{% static 'images/undraw_Around_the_world_re_n353.png' %}" alt="Around the world =)">
+    </div>
+</div>
+{% endblock content %}
