@@ -7,20 +7,6 @@
 {% endblock stylesheet %}
 
 {% block content %}
-<div class="top-bar">
-    <div class="logo-container">
-        <img id="logo" src="{% static 'images/logo_transparent.png' %}" alt="Logo">
-    </div>
-    <header class="menu">
-        <ul class="menu-list">
-            <li><a target="_blank" href="#">How we function</a></li>
-            <li><a target="_blank" href="#">Services</a></li>
-            <li><a target="_blank" href="#">Pricing</a></li>
-            <li><a target="_blank" href="#">Contacts</a></li>
-        </ul>
-    </header>
-</div>
-
 <div class="main-content">
     <div class="intro-container">
         <h1>Welcome to Z-DEV Page</h1>
@@ -38,7 +24,3 @@
     </div>
 </div>
 {% endblock content %}
-
-{% block scripts %}
-<script type="application/javascript" src="{% static 'js/navBarLinks.js' %}"></script>
-{% endblock scripts %}

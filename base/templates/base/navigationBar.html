@@ -1,0 +1,15 @@
+{% load static %}
+
+<div class="top-bar">
+    <div class="logo-container">
+        <a href="{% url 'base-home' %}" ><img id="logo" src="{% static 'images/logo_transparent.png' %}" alt="Logo"></a>
+    </div>
+    <header class="menu">
+        <ul class="menu-list">
+            <li><a id="function" href="{% url 'base-about' %}">How we function</a></li>
+            <li><a id="services" href="{% url 'base-services' %}">Services</a></li>
+            <li><a id="pricing" href="{% url 'base-pricing' %}">Pricing</a></li>
+            <li><a id="contact" href="{% url 'base-contacts' %}">Contacts</a></li>
+        </ul>
+    </header>
+</div>

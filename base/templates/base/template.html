@@ -7,19 +7,35 @@
         <title>ZEV Store Template</title>
 
         <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/template.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/loader.css' %}">
+
         <link rel="icon" href="{% static 'images/favicon2.png' %}">
         <!-- Stylesheet Connections -->
         {% block stylesheet %}
         {% endblock %}
 
+        <!-- Connect JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     </head>
     <body>
+        <!-- Connect the Header -->
+        {% include 'base/navigationBar.html' %}
+
         <!-- Main Page Content -->
         {% block content %}
         {% endblock %}
+
+        <!-- Preloader -->
+        <span class="loader"><span class="loader-inner"></span></span>
     </body>
 
     <!-- script tag connections -->
+    <script>
+        $(window).on("load", function () {
+            $(".loader").fadeOut("slow");
+        });
+    </script>
     {% block scripts %}
     {% endblock %}
 </html>
