@@ -9,15 +9,17 @@
 {% block content %}
 <div class="main-content">
     <div class="intro-container">
-        <h1>Welcome to Z-DEV Page</h1>
+        <h1>Welcome to Cloud Dev</h1>
 
-        <p> Developer & Final year Student at Aberystwyth University, <br>
-            Aiming to become a full stack developer. Current skills <br>
-            under my belt are: Java, Python, HTML, CSS, JavaScript <br>
-            and many more to come.</p>
+        <p>Have you ever wanted a full stack website? Well <br>
+            then you need not look further. We provide a   <br>
+            website catered exactly to your needs made to  <br>
+            near perfection. We work with you to design what <br>
+            you need and want.
+        </p>
 
 
-        <button id="projects" onclick="window.open('https://github.com/Zero069')">Check Out My Projects</button>
+        <button id="submit-form" onclick="window.location.href = `{% url 'base-sendEmail' %}`">Submit A Purchase Form</button>
     </div>
     <div class="image2-container">
         <img src="{% static 'images/undraw_Around_the_world_re_n353.png' %}" alt="Around the world =)">
